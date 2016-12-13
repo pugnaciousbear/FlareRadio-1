@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    background-image: url(/flare/assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    border-radius: 5px;
+}
+
+li {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+li a {
+    font-family: 'Poppins';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+/* Add a gray right border to all list items, except the last item (last-child) */
+li.border {
+    border-left: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h1 {
+    display: inline;
+    font-family: Poppins;
+    font-size: 25px;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+}
+
+.container1 {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+footer {
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 23px;
+    width: 100%;
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 17px;
+}
+input[type=range],
+input[type=range] + .thumb {
+  cursor: pointer;
+}
+
+input[type=range] {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 220px;
+  margin: 15px 0;
+  padding: 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range] + .thumb {
+  position: absolute;
+  border: none;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background-color: #26a69a;
+  top: 10px;
+  margin-left: -6px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+input[type=range] + .thumb .value {
+  display: block;
+  width: 30px;
+  text-align: center;
+  color: #4B4B4B;
+  font-size: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+input[type=range] + .thumb.active {
+  border-radius: 50% 50% 50% 0;
+}
+
+input[type=range] + .thumb.active .value {
+  color: #fff;
+  margin-left: -1px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #4B4B4B;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #C45454;
+  margin: -5px 0 0 0;
+  transition: .3s;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #4B4B4B;
+}
+
+input[type=range]::-moz-range-track {
+  height: 3px;
+  background: #ddd;
+  border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #26a69a;
+  margin-top: -5px;
+}
+
+input[type=range]:focus::-moz-range-track {
+  background: #CE7070;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #777;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #26a69a;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+    background-color: #D58787;
+}
