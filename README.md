@@ -17,4 +17,4 @@ Current Statistics:
 
 ###Bot
 Includes:
-+All files required for the bot to run.
++ All files required for the bot to run.
